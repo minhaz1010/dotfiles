@@ -1,1 +1,82 @@
 
+window:
+  dimensions:
+    columns: 100
+    lines: 35
+  padding:
+    x: 10
+    y: 10
+  class:
+    instance: Alacritty
+    general: Alacritty
+  opacity: 0.7
+
+scrolling:
+  history: 10000
+  multiplier: 3
+
+font:
+  normal:
+    family: JetBrainsMono Nerd Font
+    style: Regular
+  bold:
+    family: JetBrainsMono Nerd Font
+    style: Bold
+  italic:
+    family: JetBrainsMono Nerd Font
+    style: Italic
+  bold_italic:
+    family: JetBrainsMono Nerd Font
+    style: Bold Italic
+  size: 8
+draw_bold_text_with_bright_colors: true
+
+import:
+  - ~/.config/alacritty/catppuccin-mocha.yml
+
+selection:
+  save_to_clipboard: false
+
+shell:
+  program: /usr/bin/zsh
+
+
+key_bindings:
+  - { key: Return,      mods: Super|Shift,      action: SpawnNewInstance }
+  - { key: Q,           mods: Control,          action: Quit }
+  - { key: T,           mods: Control|Shift,    action: SpawnNewInstance }
+  - { key: O,           mods: Control,          action: ToggleFullscreen }
+  - { key: C,           mods: Control|Shift,    action: Copy }
+  - { key: V,           mods: Control|Shift,    action: Paste }
+  - { key: H,           mods: Control,          action: Minimize }
+  - { key: N,           mods: Control|Shift,    action: CreateNewWindow }
+  - { key: Plus,        mods: Control,          action: IncreaseFontSize }
+  - { key: Minus,       mods: Control,          action: DecreaseFontSize }
+colors:
+  name: Atelierlakeside (dark)
+  author: Chris Kempson
+  primary:
+    background: "#161b1d"
+    foreground: "#7ea2b4"
+  cursor:
+    text: "#161b1d"
+    cursor: "#7ea2b4"
+  normal:
+    black: "#161b1d"
+    red: "#d22d72"
+    green: "#568c3b"
+    yellow: "#8a8a0f"
+    blue: "#257fad"
+    magenta: "#5d5db1"
+    cyan: "#2d8f6f"
+    white: "#7ea2b4"
+  bright:
+    black: "#5a7b8c"
+    red: "#d22d72"
+    green: "#568c3b"
+    yellow: "#8a8a0f"
+    blue: "#257fad"
+    magenta: "#5d5db1"
+    cyan: "#2d8f6f"
+    white: "#ebf8ff"
+theme: Atelierlakeside.dark
